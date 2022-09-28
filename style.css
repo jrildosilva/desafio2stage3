@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, select, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #E5E5E5;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 465px;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  background: #293241;
+  mix-blend-mode: normal;
+
+}
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-top: 107px;
+ 
+  
+  background: #293241;
+  mix-blend-mode: normal;
+ 
+}
+
+
+
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  margin-bottom: 2px;
+  color: #FFFFFF;
+}
+
+header p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+ 
+
+  color: #FFFFFF;
+}
+
+header img {
+  display: flex;
+  margin: auto;
+  margin-top: 16px;
+  width: 225px;
+  height: 100px;
+  left: 589px;
+  top: 200px;
+
+
+}
+
+.top {
+  position: absolute;
+  width: 750px;
+  height: 136px;
+  margin-top: 32px;
+ 
+  
+  background: #F67669;
+  border-radius: 0px 0px 20px 20px;
+  border-bottom: #293241;
+  mix-blend-mode: normal;;
+  transform: rotate(-180deg);
+}
+
+.top h1 {
+  transform: rotate(-180deg);
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #FFFFFF;
+
+
+}
+
+form {
+
+  margin-top: 130px;
+
+  border-radius: 8px 8px 0 0;
+  background:#FFFFFF;;
+ 
+
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  min-height: 300px;
+}
+
+fieldset {
+   border: none;
+}
+
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+fieldset legend {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #253B51;
+  border-bottom:1px solid #E6E6F0;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 16px;
+
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column; 
+
+
+}
+
+.input-wrapper label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+  margin-top: 18px;
+  margin-bottom: 9px;
+
+ 
+}
+
+.input-wrapper span {
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+
+}
+
+.input-wrapper span:hover {
+  color:  #F67669;
+}
+
+
+.input-wrapper input,
+.input-wrapper textarea, 
+.input-wrapper select {
+  
+  background: #FAFAFC;
+  
+  
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  height: 56px;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 26px;
+  color:  #4E4958;
+}
+
+
+.input-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.input-wrapper textarea {
+  width: 608px;
+  height: 167px;
+  margin-bottom: 29px;
+  padding: 0;
+}
+
+.col-2 {
+  display:flex;
+  gap: 24px;
+  width: 622px;
+ 
+ 
+ 
+}
+ .col-2 input {
+  width: 300px;
+ }
+
+ .col-2 input > div:nth-child(3) {
+  width: 622px;
+  
+ } 
+
+
+.col-3 {
+  display: flex;
+  gap: 24px;
+ 
+ 
+}
+
+.col-3 > div:nth-child(1){
+ width: 300px;
+}
+ 
+
+
+
+ select {
+  width: 300px;
+}
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin: 0;
+}
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+.checkbox-wrapper input:checked + label::before {
+  
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+
+#agenda .col-3 .input-wrapper input {
+  display:flex;
+  
+  
+ 
+ }
+
+#agenda {
+  margin-bottom: 100px;
+}
+
+
+#agenda {
+  margin-bottom: 63px;
+}
+
+footer {
+   background: #F67669;
+    height: 51px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-bottom: 100px;
+    border-radius: 8px;
+    align-items: center;
+ 
+}
+
+footer .button:hover {
+  background: #f38f84;
+}
+
+
+
+footer input {
+  width: 50px;
+  height: 26px;
+
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: #C1BCCC;
+  background-position:center bottom 12.5px;
+  margin-top: -10px;
+
+
+ 
+}
+footer input button {
+  margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+ 
